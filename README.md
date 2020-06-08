@@ -1,1 +1,2 @@
 # Event-Registration-System
+The main object of our system is to provide a Hassel free event registration and management system. We have till now built a system which provides Registration and admin login provision. We have also displayed the statistics using charts and table which is accessible to the admin only.  Considering future work we are also working on adding a module for automatic email sender to the participant as soon as he registers.
