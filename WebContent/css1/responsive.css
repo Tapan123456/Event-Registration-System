@@ -1,0 +1,481 @@
+
+
+/*-------------------------------------------------------------------------------------
+Theme Name: SuperElement-dashboard
+Theme URI:  
+Version: 1.0
+Author: Pentathemes
+-------------------------------------------------------------------------------------*/
+
+
+/**
+****************************************
+@File: SuperElements Theme page Styles
+
+* This file contains the responsive styling for the actual theme, this
+is the file you need to edit to change the responsive look of the
+theme.
+*/
+
+
+/* small devices (large desktops, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+  /* -------------------------------- 
+  Primary style
+  -------------------------------- */
+  .cd-main-content .content-wrapper {
+    margin-left: 110px;
+    padding-top: 55px;
+  }
+  .cd-main-content::before {
+    content: 'tablet';
+  }
+  /* -------------------------------- 
+     Header
+     -------------------------------- */
+  .cd-main-header {
+    position: fixed;
+    height: 55px;
+  }
+  .cd-logo {
+    margin: 0;
+  }
+  .cd-nav-trigger {
+    display: none;
+  }
+  .cd-search {
+    float: left;
+    display: inline-block;
+    width: 26%;
+    height: 100%;
+    margin: 0;
+  }
+  .cd-search.is-hidden {
+    /* reset style */
+    opacity: 1;
+  }
+  .cd-search::before {
+    background-position: 0 -16px;
+    left: 1em;
+  }
+  .cd-search form,
+  .cd-search input {
+    height: 100%;
+    width: 100%;
+  }
+  .cd-search input {
+    border: none;
+    padding-left: 2.6em;
+    border-radius: 0;
+    background-color: #3e454c;
+    border-left: 1px solid #51575d;
+    color: #ffffff;
+  }
+  .cd-search input::-webkit-input-placeholder {
+    color: #777c81;
+  }
+  .cd-search input::-moz-placeholder {
+    color: #777c81;
+  }
+  .cd-search input:-moz-placeholder {
+    color: #777c81;
+  }
+  .cd-search input:-ms-input-placeholder {
+    color: #777c81;
+  }
+  /* -------------------------------- 
+    Top Navigation
+   -------------------------------- */
+  .cd-nav {
+    display: block;
+    float: right;
+    height: 100%;
+  }
+  /* -------------------------------- 
+     Sidebar
+     -------------------------------- */
+  .cd-side-nav {
+    position: relative;
+    float: left;
+    top: auto;
+    width: 110px;
+    min-height: 100vh;
+    padding-top: 55px;
+    /* reset style */
+    visibility: visible;
+    opacity: 1;
+    overflow: visible;
+    max-height: none;
+  }
+  .cd-side-nav.nav-is-visible {
+    box-shadow: none;
+  }
+  .cd-side-nav.is-fixed {
+    position: fixed;
+  }
+  .cd-side-nav>ul {
+    /* reset style */
+    padding: 0;
+  }
+  .cd-side-nav .cd-label {
+    /* remove labels on minified version of the sidebar */
+    display: none;
+  }
+  .cd-side-nav a {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .cd-side-nav>ul>li>a {
+    padding: calc(2.2em + 24px) 0 2.4em;
+  }
+  .cd-side-nav>ul>li>a::before {
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 2.4em;
+  }
+  .cd-side-nav .active>a {
+    /* current page */
+    box-shadow: inset 3px 0 0 #1597f3;
+    background-color: #33383e;
+  }
+  .cd-side-nav .action-btn a {
+    margin: 1em 10% 0;
+  }
+  .cd-side-nav .count {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    top: 2em;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: calc(50% + 5px);
+    right: auto;
+    color: transparent;
+  }
+  .has-children {
+    position: relative;
+  }
+  .has-children ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 160px;
+    padding: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  .has-children ul a {
+    text-align: left;
+    border: none;
+    padding: 1em;
+  }
+  /*=======================================
+  main-content block
+  =======================================*/
+}
+
+
+/* Large devices (large desktops, 1170px and up) */
+
+@media only screen and (min-width: 1170px) {
+  /* -------------------------------- 
+      Primary style
+      -------------------------------- */
+  .cd-main-content .content-wrapper {
+    margin-left: 245px;
+  }
+  .cd-main-content::before {
+    content: 'desktop';
+  }
+  /* -------------------------------- 
+Top Navigation
+-------------------------------- */
+  .cd-nav-top {
+    height: 100%;
+  }
+  .cd-nav-top a {
+    display: block;
+    font-size: 1.4rem;
+    color: #ffffff;
+  }
+  .cd-nav-top>li {
+    display: inline-block;
+    margin-right: 1em;
+    height: 100%;
+  }
+  .cd-nav-top>li:last-of-type {
+    margin-right: 0;
+  }
+  .cd-nav-top>li a {
+    padding: 1em .6em !important;
+  }
+  .cd-nav-top img {
+    display: block;
+  }
+  .cd-nav-top li:not(.has-children) a:hover {
+    color: #1784c7;
+  }
+  /* -------------------------------- 
+Sidebar
+-------------------------------- */
+  .cd-side-nav {
+    width: 245px;
+  }
+  .cd-side-nav>ul {
+    padding: 0.6em 0;
+  }
+  .cd-side-nav>ul>li:not(.action-btn):hover>a {
+    background-color: #33383e;
+  }
+  .cd-side-nav>ul>li>a {
+    padding: 10px 20px 10px 18px;
+    text-align: left;
+    border-bottom: none;
+    font-size: 14px;
+  }
+  .cd-side-nav>ul>li>a::before {
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 18px;
+  }
+  .cd-side-nav .cd-label {
+    display: block;
+    padding: 1em 18px;
+  }
+  .cd-side-nav .action-btn {
+    text-align: left;
+  }
+  .cd-side-nav .action-btn a {
+    margin: 0 18px;
+  }
+  .no-touch .cd-side-nav .action-btn a:hover {
+    background-color: #1a93de;
+  }
+  .cd-side-nav .count {
+    /* reset style */
+    color: #ffffff;
+    height: auto;
+    width: auto;
+    border-radius: .25em;
+    padding: .2em .4em;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 25px;
+    left: auto;
+    box-shadow: none;
+  }
+  .has-children>ul {
+    width: 100%;
+    z-index: 1;
+  }
+  .has-children ul a {
+    padding-left: 18px;
+  }
+  .has-children.active>ul {
+    /* if the item is active, make the subnavigation visible */
+    position: relative;
+    display: block;
+    /* reset style */
+    left: 0;
+    box-shadow: none;
+  }
+  .no-touch .cd-side-nav .has-children:hover>ul,
+  .cd-side-nav .has-children.hover>ul {
+    /* show subnavigation on hover */
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+/* medium devices (medium desktops, 1200px and less) */
+
+@media (min-width: 991px) and (max-width: 1200px) {
+  .small-box-chart,
+  .white-box-intro,
+  .icon-intro-classic-box,
+  .round-div {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1170px) {
+  .cd-side-nav a i {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .cd-side-nav a i {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  .icon-intro-classic-box {
+    padding: 0 10px;
+  }
+  .icon-box i {
+    margin-top: 14px !important;
+    font-size: 50px !important;
+    width: 110px !important;
+    height: 110px !important;
+    border: 1px solid #fff;
+  }
+  .small-box-chart,
+  .white-box-intro,
+  .icon-intro-classic-box,
+  .round-div {
+    margin-bottom: 20px;
+  }
+}
+
+
+/*small devices (small desktops,768px and less) */
+
+@media screen and (max-width: 768px) {
+  /*header*/
+  .cd-nav-top .inbox-nav,
+  .cd-nav-top .bell-nav {
+    display: none !important;
+  }
+  .account-nav button span {
+    display: none;
+  }
+  .cd-logo {
+    font-size: 20px;
+    width: 150px;
+  }
+  .account-nav button {
+    background: none;
+  }
+  .cd-nav-top img {
+    height: 35px;
+    width: 35px;
+    margin: 0px
+  }
+  .nav-main button.dropdown-toggle {
+    height: 46px;
+    padding: 0px 2px;
+  }
+  .cd-nav-top li.dropdown .dropdown-menu {
+    width: auto !important;
+    right: unset !important;
+  }
+  .cd-nav-top li.dropdown .dropdown-menu .dropdown-item {
+    color: #fff;
+  }
+  .cd-side-nav>ul:last-of-type {
+    padding-bottom: 20px;
+  }
+  .cd-search input {
+    border-radius: 0px;
+  }
+  /*end of header*/
+  .cd-main-content .content-wrapper {
+    padding: 45px 0px 3em;
+  }
+  .small-box-chart {
+    margin-bottom: 20px;
+  }
+  .inner-box-dash-wrapper .icon-details h3 {
+    font-size: 30px;
+  }
+  .inner-box-dash-wrapper .icon-chart i {
+    font-size: 140px;
+  }
+  .chart-sec {
+    padding: 10px 5px 10px;
+  }
+  .display-head h4 {
+    font-size: 13px;
+  }
+  a.view-btn {
+    padding: 3px 10px;
+    font-size: 11px;
+  }
+  .calendar .day-names li {
+    font-size: 11px;
+  }
+  .calendar .days li .date {
+    font-size: 12px;
+  }
+  .table-content .table th {
+    font-size: 12px;
+  }
+  .table-content .table td p.medium {
+    font-size: 12px !important;
+  }
+  .total-earning .earning-price {
+    font-size: 22px;
+  }
+  .first-round {
+    padding-right: 0px;
+    margin-bottom: 20px;
+  }
+  /*dashboard statistics*/
+  .white-box-intro,
+  .icon-intro-classic-box {
+    margin-bottom: 20px !important;
+  }
+  .icon-box .icon-details h3 {
+    font-size: 30px;
+  }
+  .icon-box i {
+    margin-top: 14px !important;
+    font-size: 50px !important;
+    width: 110px !important;
+    height: 110px !important;
+    border: 1px solid #fff;
+  }
+  .round-div {
+    margin-bottom: 20px;
+  }
+  /*dashboard widget*/
+  .detail-img {
+    width: 100%;
+  }
+  .recent-post .name-images {
+    width: 57px;
+  }
+  .recent-post .detail-img {
+    width: 77% !important;
+  }
+  .notification .detail-img a {
+    top: -20px;
+  }
+}
+
+
+/* small devices (small desktops, 703px and less) */
+
+@media screen and (max-width: 703px) {
+  .cd-side-nav.nav-is-visible {
+    position: relative;
+  }
+}
+

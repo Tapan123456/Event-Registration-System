@@ -1,0 +1,2853 @@
+/*-------------------------------------------------------------------------------------
+Theme Name: SuperElement
+Theme URI:  
+Version:    2.0
+Author: Pentathemes
+-------------------------------------------------------------------------------------
+ RESPONSIVE STYLES
+-------------------------------------------------------------------------------------*/
+
+/* Large devices (large desktops, 1800px and up) */
+@media screen and (max-width: 1800px)
+{
+  .saas-banner::after
+  {
+    background-size: cover;
+  }
+}
+/* medium devices to large device (tab to large desktops, 992px and up) */
+@media screen and (min-width: 992px)
+{
+
+/*==========================
+  menu style
+  ==========================*/
+  .navbar .container
+  {
+    position: relative !important;
+  }
+   .navbar-expand-lg .navbar-collapse 
+    {
+     display: block !important;
+    }
+     .navbar-right {
+     float: right !important;
+     margin-right: -15px;
+}
+
+ .navbar {
+     padding: 0px;
+}
+ .navbar .nav-item .nav-link {
+     padding: 30px 10px;
+     font-size:13px;
+     text-transform: uppercase;
+     font-weight:500;
+     color: #444;
+     transition: .3s ease-in;
+}
+ .navbar.fixed-menu .nav-item .nav-link 
+ {
+  padding: 20px 10px;
+ }
+ .blank-menu {
+     position: fixed;
+     width: 100%;
+     background:none;
+     z-index: 999;
+     transition: .3s ease-in;
+}
+ .custom-menu-1 {
+     padding:0;
+}
+ .custom-menu-1 .logo {
+     float: left;
+     padding: 17px 0;
+     transition: .3s ease-in;
+}
+ .custom-menu-1 .menu-list {
+     float: right;
+}
+ .custom-menu-1 .menu-list ul {
+     padding: 0px;
+     margin-bottom: 0px;
+}
+ .custom-menu-1 .menu-list ul li {
+     display: inline-block;
+     border-bottom: 1px solid #eee;
+}
+ .custom-menu-1 .menu-list > ul > li > a {
+     font-size: 14px;
+     color: #222;
+     padding: 30px 15px;
+     display: block;
+     transition: .3s ease-in;
+     position: relative;
+}
+.white-text-menu ul.navbar-nav li a.nav-link
+{
+  color: #fff !important;
+}
+.white-text-menu.fixed-menu ul.navbar-nav li a.nav-link
+{
+  color: #000 !important;
+}
+.white-text-menu .md-logo h3
+{
+  color: #fff
+}
+.white-text-menu.fixed-menu .md-logo h3
+{
+  color: #000
+}
+
+/*==========================
+  double menu
+  ==========================*/
+ .dropdown-list-double {
+     display: flex;
+     flex-wrap: wrap;
+     position: absolute;
+     background: #fff;
+     width: 300px !important;
+     visibility: hidden;
+    /* hides sub-menu */
+     opacity: 0;
+     top: 100%;
+     left: 0;
+     transform: translateY(-2em);
+     z-index: -1;
+     transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+     margin-top: 0px;
+     border:0px;
+     border-radius: 0px 0px 2px 2px;
+     padding:10px !important;
+     box-shadow: 0 6px 9px rgba(0,0,0,0.05) !important;
+}
+/* .dropdown-list-double li {
+     display: block !important;
+     width: 50%;
+}*/
+ .dropdown-item
+ {
+  clear: unset !important;
+ }
+ .dropdown-list-double a {
+     padding: 5px 15px;
+     font-size: 13px;
+     color: #717171;
+     font-family: 'Open Sans', sans-serif;
+     display: flex;
+     flex-basis: 50%;
+     -webkit-box-pack: justify;
+     justify-content: space-between;
+     text-transform: none;
+     font-weight:400;
+     opacity:1;
+     text-transform: capitalize;
+     width: 50%;
+     float: left;
+}
+ .menu-list .dropdown {
+     position: relative;
+}
+.dropdown:hover .dropdown-list-double{
+     visibility: visible;
+    /* shows sub-menu */
+     opacity: 1;
+     z-index: 1;
+     transform: translateY(0%);
+     transition-delay: 0s, 0s, 0.3s;
+    /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+/*==========================
+  Single menu
+  ==========================*/
+ .dropdown-list {
+     display: block;
+     flex-wrap: wrap;
+     position: absolute;
+     background: #fff;
+     visibility: hidden;
+    /* hides sub-menu */
+     opacity: 0;
+     top: 100%;
+     left: 0;
+     transform: translateY(-2em);
+     z-index: -1;
+     transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+     margin-top: 0px;
+     border:0px;
+     border-radius: 0px 0px 2px 2px;
+     box-shadow: 0 6px 9px rgba(0,0,0,0.05);
+}
+ .dropdown-list li {
+     display: block !important;
+}
+ .dropdown-list a {
+     padding: 5px 15px;
+     font-size: 13px;
+     color: #717171;
+     font-family: 'Open Sans', sans-serif;
+     display: block;
+     flex-basis: 50%;
+     -webkit-box-pack: justify;
+     justify-content: space-between;
+     text-transform: none;
+     font-weight: 400;
+     opacity:1;
+     text-transform: capitalize;
+}
+ .menu-list .dropdown {
+     position: relative;
+}
+ .dropdown:hover .dropdown-list{
+     visibility: visible;
+    /* shows sub-menu */
+     opacity: 1;
+     z-index: 1;
+     transform: translateY(0%);
+     transition-delay: 0s, 0s, 0.3s;
+    /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+ .fixed-menu {
+     position: fixed;
+     width: 100%;
+     background: #fff !important;
+     z-index: 999;
+     transition: .3s ease-in;
+     box-shadow: 0px 0px 14px 0px #ccc;
+}
+nav.light-bg-nav.blank-menu.fixed-menu
+{
+  background-color:#fff !important;
+}
+ .fixed-menu .custom-menu-1 .logo {
+     padding: 7px 0;
+}
+ .fixed-menu .custom-menu-1 .menu-list > ul > li > a {
+     font-size: 14px;
+     padding: 0px 15px;
+     color: #222;
+     padding: 20px 15px;
+     display: block;
+}
+ .for-padding {
+     padding-top: 50px;
+}
+ .fixed-menu #cssmenu > ul > li > a {
+     padding: 20px 17px !important;
+}
+ .fixed-menu .nav-brand img {
+     padding-top: 0px;
+}
+/* .block-banner .banner-content {
+     padding-top: 50px;
+}*/
+/*==========================
+  Mengamenu
+  ==========================*/
+  li.mega-dropdown
+  {
+    position: unset !important;
+  }
+  .mega-dropdown-list
+  {
+    width: 100% !important;
+    padding: 30px 60px !important;
+    background: url("../images/mega-menu.png") no-repeat right 20px #fff;
+  }
+  .mega-dropdown-list ul {
+     padding: 0px;
+     width: 25%;
+     float: left;
+   }
+   .mega-dropdown-list ul:first-child
+   {
+    border-left: 0px;
+   }
+   .mega-dropdown-list ul li
+   {
+    list-style: none;
+   }
+   .mega-dropdown-list ul li a
+   {
+    text-transform: capitalize;
+   }
+   .mega-dropdown-list ul li p
+   {
+    color: #717171;
+    padding: 5px 0;
+   }
+   .mega-dropdown-list ul li h4
+   {
+    text-transform: capitalize;
+    color: #444;
+    font-weight: 400;
+   }
+   .mega-dropdown-list ul li h4 span
+   {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+    padding-top: 2px;
+    line-height: 23px;
+   }
+   .mega-dropdown-list ul li a
+   {
+    padding: 7px 0;
+    float: none;
+    width: 100%;
+   }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1024px)
+{
+  .agency-entry-content img
+  {
+    max-width: 450px;
+  }
+  .agency-entry-content h4
+  {
+    font-size: 20px;
+  }
+    .agency-entry-content h2
+  {
+    font-size:34px;
+  }
+  .hosting-inner-content
+  {
+    padding: 0 20px;
+  }
+  .slider-banner-inner
+  {
+      height: 700px !important;
+  }
+  /*================================
+    mobile app
+    ================================*/
+    .mobile-banner
+    {
+      height: auto;
+    }
+}
+
+/* Large devices (large desktops, 1200px and 1024) */
+@media screen and (max-width: 1200px) and (min-width: 1024px)
+{
+
+  /*=====================
+    haeder
+    =====================*/
+  .navbar-brand
+  {
+    width: 200px;
+  }
+  .header-button a
+  {
+    font-size: 12px;
+    height: 33px;
+  }
+  /*======================
+    banner
+  ======================*/
+     .block-banner
+    {
+      height: 300px;     
+    }
+     .slider-banner-inner
+    {
+        height: 700px !important;
+    }
+
+  /*======================
+    subscribe block
+    ======================*/
+    .sub-input a
+    {
+      width: 35%;
+    }
+    .sub-input input.custom-input
+    {
+      width: 65%;
+    }
+     .block-banner .banner-content 
+    {
+     padding-top: 0px;
+    }
+
+  /*===============================
+    hosting page
+    ===============================*/
+    .hosting-banner
+    {
+      padding: 100px 0;
+      height: auto;
+    }
+  /*===============================
+    seo
+    ===============================*/
+    .seo-banner 
+    {
+    position: relative;
+    background: #6ab6f1;
+    overflow: hidden;
+    height: 768px;
+    }
+
+  /*===============================
+    saas-contact page
+    ===============================*/
+    .saas-contact-wrapper h5
+    {
+      font-size: 15px;
+    }
+
+    /*===============================
+    carousal-block
+    ===============================*/
+    .carousal-wrapper .swiper-wrapper.vertical-swipper 
+    {
+      height: 380px;
+    }
+  /*===============================
+    hosting
+    ===============================*/
+    .hosting-inner-content h2 {
+    color: #fff;
+    font-size: 35px;
+  }
+    /*================================
+    mobile app
+    ================================*/
+    .mobile-banner
+    {
+      height: auto;
+    }
+    .img-mobile-banner
+    {
+      height: 800px;
+    }
+    .mobile-banner:before
+    {
+      height: 120px;
+    }
+
+}
+
+/* medium devices (Medium desktops, 1024 to 991) */
+@media screen and (max-width: 1024px) and (min-width: 991px)
+{
+/*=====================
+  haeder
+  =====================*/
+  .navbar-brand
+  {
+    width: 200px;
+  }
+  .header-button a
+  {
+    font-size: 12px;
+    height: 33px;
+  }
+  /*======================
+    banner
+  ======================*/
+  .block-banner
+    {
+      height: 300px;     
+    }
+    .block-banner .banner-content 
+    {
+     padding-top: 0px;
+    }
+    .slider-banner-inner
+    {
+        height: 768px !important;
+    }
+    .agency-entry-content img
+    {
+      max-width: 450px;
+    }
+    .agency-entry-content h4
+    {
+      font-size: 20px;
+    }
+      .agency-entry-content h2
+    {
+      font-size:34px;
+    }
+  /*======================
+    subscribe block
+    ======================*/
+    .sub-input a
+    {
+      width: 35%;
+    }
+    .sub-input input.custom-input
+    {
+      width: 65%;
+    }
+  /*===============================
+    seo
+    ===============================*/
+    .seo-banner 
+    {
+    position: relative;
+    background: #6ab6f1;
+    overflow: hidden;
+    height: 768px;
+    }
+  /*===============================
+    hosting page
+    ===============================*/
+    .hosting-banner
+    {
+      padding: 100px 0;
+      height: auto;
+    }
+  /*===============================
+    saas-contact page
+    ===============================*/
+    .saas-contact-wrapper h5
+    {
+      font-size: 15px;
+    }
+  /*===============================
+    carousal-block
+    ===============================*/
+    .carousal-wrapper .swiper-wrapper.vertical-swipper 
+    {
+      height: 315px;
+    }
+  /*===============================
+    hosting
+    ===============================*/
+    .hosting-inner-content h2 {
+    color: #fff;
+    font-size: 35px;
+  }
+
+  /*================================
+    mobile app
+    ================================*/
+    .mobile-banner
+    {
+      height: auto;
+    }
+    .img-mobile-banner
+    {
+      height: 790px;
+    }
+    .mobile-banner:before
+    {
+      height: 100px;
+    }
+
+}
+
+/* Medium devices (Medium desktops, 991 to 768) */
+@media screen and (max-width: 991px) and (min-width:768px)
+{
+
+    /*===============================
+    Header Style
+    ===============================*/
+    .header-button
+    {
+      position: absolute;
+      right: 60px;
+      top: 3px;
+    }
+    .dropdown-menu
+    {
+      border:0px;
+    }
+    .navbar-nav .nav-link
+    {
+      padding-right: 8px;
+      padding-left: 8px;
+    }
+    .navbar .nav-item .nav-link
+    {
+      border-bottom: 1px solid #eee;
+    }
+    .custom-menu-1 .menu-list
+    {
+      position: fixed;
+      height: 100%;
+      background: #f6f6f6;
+      right: 0;
+      z-index: 999;
+    }
+    .custom-menu-1 .menu-list ul li
+    {
+      display: block;
+      width: 300px;
+      border-bottom: 1px solid #eee;
+    }
+    .blank-menu
+    {
+      background: #fff;
+      z-index: 999;
+    }
+    .custom-menu-1 .menu-list ul li a
+    {
+      padding: 15px 40px;
+    }
+    .fixed-menu .custom-menu-1 .menu-list ul li a
+    {
+     padding: 15px 40px;
+    } 
+    .dropdown-list {
+      position: relative;
+      width: 100%;
+      transition:unset;
+      display: none;
+    }
+     .dropdown:hover .dropdown-list {
+     height: auto;
+    }
+     .dropdown:focus .dropdown-list, .dropdown:focus-within .dropdown-list, .dropdown:hover .dropdown-list{
+     visibility: visible;
+    /* shows sub-menu */
+     opacity: unset;
+     z-index: 1;
+     transform:none;
+     transition-delay:unset;
+    /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+  /*======================
+    megamenu
+    ======================*/
+   .mega-dropdown-list ul 
+   {
+     margin-bottom: 20px;
+   }
+   .mega-dropdown-list ul li
+   {
+    list-style: none;
+   }
+   .mega-dropdown-list ul li a
+   {
+    text-transform: capitalize;
+    padding: 5px 0;
+   }
+   .mega-dropdown-list ul li p
+   {
+    color: #717171;
+    padding: 5px 0;
+   }
+   .mega-dropdown-list ul li h4
+   {
+    text-transform: capitalize;
+    color: #444;
+    font-weight: 400;
+   }
+    .mega-dropdown-list ul li h4 span
+   {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+    padding-top: 2px;
+    line-height: 23px;
+   }
+
+  /*======================
+    searchbox
+    ======================*/
+   .head-search {
+    margin-left: 20px;
+    margin-top: 3px;
+    position: absolute;
+    right: 60px;
+    top: 15px;
+}
+
+  /*======================
+    typography
+    ======================*/
+    h1
+    {
+      font-size: 35px;
+    }
+    h2
+    {
+      font-size: 30px;
+    }
+    h3
+    {
+      font-size: 25px;
+    }
+    h4
+    {
+      font-size: 20px;
+    }
+    h5
+    {
+      font-size: 15px;
+    }
+  
+  /*======================
+    navbar
+    ======================*/
+  .nav-brand
+  {
+    padding-top: 20px;
+  }
+  #cssmenu > ul > li > a
+  {
+    padding: 17px 10px;
+  }
+  /*======================
+    banner
+  ======================*/
+  .block-banner
+  {
+    height: 260px;     
+  }
+  /*footer*/
+  footer.dark-footer ul li a
+  {
+    font-size: 13px
+  }
+  footer.dark-footer ul.social li a
+  {
+    font-size: 20px
+  }
+  .agency-entry-content img
+  {
+    max-width: 450px;
+  }
+  .gradient-banner .first-slide
+  {
+    height: 615px !important;
+  }
+
+  /*======================
+    team page
+  ======================*/
+  .team-2-inner ul li a
+  {
+    font-size: 10px;
+  }
+  .team-2-inner ul li
+  {
+    padding: 0px;
+  }
+  .team-inner-wrapper  p
+  {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+/*======================
+  pricing Page
+  ======================*/
+
+  .best-price .pricing-inner::before
+  {
+    top: 0.76em;
+    left: -3.54em;
+  }
+
+/*======================
+  subscribe block
+  ======================*/
+  .sub-input a
+  {
+    width: auto;
+  }
+  .sub-input input.custom-input
+  {
+    width:100%;
+  }
+  .sub-input input.custom-input
+  {
+    width:100%;
+    margin-bottom: 5px;
+  }
+
+  .sub-input-2 input
+  {
+    border-radius: 30px !important;
+  }
+  .sub-input-2 a
+  {
+    border-radius:30px;
+  }
+
+  .sub-input-3 input.custom-input
+  {
+    width:70%;
+    margin: 0px;
+  }
+  .sub-input-3 a
+  {
+    width: 30%;
+  }
+  .sub-input button {
+    width: 120px;
+  }
+  .sub-input-2 button
+  {
+    border-radius: 30px;
+  }
+
+  /*======================
+    social icon block
+    ======================*/
+  .social-icons li
+  {
+    margin-bottom: 10px;
+  }
+
+/*===============================
+  Feature Blocks Page
+  ===============================*/
+
+  .feature-type-1-inner li
+  {
+    padding: 20px;
+  }
+
+ /*--------------------------
+  Feature Blocks Type-5
+  --------------------------*/  
+  .feature-img
+  {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .feature-img img
+  {
+    width:70px;
+    float: left;
+  }
+  .feature-desc
+  {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  /*===============================
+    Saas page
+    ===============================*/
+    .saas-banner-container 
+    {
+      padding-top: 60px;
+    }
+    .saas-banner
+    {
+      height: 740px;
+    }
+    .list-inner-container
+    {
+      padding-left: 50px;
+      padding-right: 30px;
+    }
+    .footer-menu-list li a
+    {
+      font-size: 11px;
+    }
+    .logo-brand.sm-logo h3 
+    {
+      font-size: 20px;
+      padding-top: 5px;
+    }
+    footer ul.social-icons li
+    {
+      margin-bottom: 0px
+    }
+    .client-4 .client-wrapper ul li
+    {
+      padding: 10px 0;
+    }
+
+  /*===============================
+    Seo page
+    ===============================*/
+    .list-inner-container p
+    {
+      line-height: 30px;
+      padding: 5px 0;
+    }
+    .video-sec-seo .list-inner-container
+    {
+      min-height: 400px;
+      padding-top:30px;
+    }
+    .seo-banner 
+    {
+    position: relative;
+    background: #6ab6f1;
+    overflow: hidden;
+    height: auto;
+    padding: 180px 0;
+    }    
+  /*===============================
+    hosting page
+    ===============================*/
+    .hosting-banner
+    {
+      padding: 60px 0;
+      height: auto;
+    }
+
+  /*===============================
+    saas contact page
+    ===============================*/
+    .saas-contact-wrapper h5 
+    {
+      font-size: 15px;
+    }
+    .typing-banner .type-wrap h2
+    {
+      display: block;
+    }
+    .typing-banner .type-wrap span#typed
+    {
+      font-size: 30px;
+    }
+
+  /*===============================
+    carousal-block
+    ===============================*/
+    .carousal-wrapper .swiper-wrapper.vertical-swipper 
+    {
+      height: 315px;
+    }
+  /*======================
+    banner
+    ======================*/
+  /*--------------------------------------------
+    12.5 video-banner
+    --------------------------------------------*/
+    .home-banner.video-option
+    {
+      height: auto !important;
+    }
+    .video-banner-overlay
+    {
+      padding: 100px 0;
+    }
+
+    /*=============================================
+      mobile app
+      =============================================*/
+      .mobile-banner
+      {
+        height: auto;
+      }
+      .img-mobile-banner
+      {
+        height: 545px;
+      }
+      .mobile-banner::before
+      {
+        height: 90px;
+      }
+      .mobile-content-inner img
+      {
+        width: 130px;
+      }
+      /*======================
+        saas-01
+      ======================*/
+      .intro-saas-2 .banner-content .banner-inner .banner-text
+      {
+        width: 100%;
+        text-align: center;
+      }
+      .intro-saas-2 .banner-content .banner-inner
+      {
+        display: block;
+        padding-top: 100px;
+      }
+      .banner-img
+      {
+        width: 80%;
+        height: auto;
+        float: none;
+        margin: 0px auto;
+      }
+      .banner-img img
+      {
+        margin-top: 50px;
+      }
+      .intro-saas-2 .img-banner-saas-01
+      {
+        position: relative;
+      }
+      .intro-saas-2
+      {
+        height: auto;
+      }
+      .saas-01-nav .navbar-nav
+    {
+      float: none;
+    }
+    .navbar.saas-01-nav .nav-item .nav-link
+    {
+      padding: 10px 10px 15px !important;
+    }
+
+}
+/* small devices (tab with width 768px) */
+@media screen and (width: 768px)
+{
+.carousal-wrapper .swiper-wrapper.swiper-container-vertical
+{
+  height: 238px !important;
+}
+}
+
+/* small devices (small desktops, 768 and less) */
+@media screen and (max-width: 768px)
+{
+
+    /*===============================
+    Header Style
+    ===============================*/
+  .client-wrapper ul
+  {
+    text-align: center;
+  }
+	.client-wrapper ul li {
+		list-style: none;
+		width: calc(95% / 2) !important;
+		float: none;
+    display: inline-block;
+    padding: 0px;
+	}
+  .client-wrapper ul li img
+  {
+    width: 100%;
+    max-width: 135px;
+    padding: 8px 0;
+  }
+     .header-button
+    {
+      position: absolute;
+      right: 60px;
+      top: 3px;
+    }
+    .dropdown-menu
+    {
+      border:0px;
+    }
+    .navbar-nav .nav-link
+    {
+      padding-right: 8px;
+      padding-left: 8px;
+    }
+    .navbar .nav-item .nav-link
+    {
+      border-bottom: 1px solid #eee;
+    }
+    .custom-menu-1 .menu-list
+    {
+      position: fixed;
+      height: 100%;
+      background: #f6f6f6;
+      right: 0;
+      z-index: 999;
+    }
+    .custom-menu-1 .menu-list ul li
+    {
+      display: block;
+      width: 300px;
+      border-bottom: 1px solid #eee;
+    }
+    .custom-menu-1 .menu-list ul li a
+    {
+      padding: 15px 40px;
+    }
+    .fixed-menu .custom-menu-1 .menu-list ul li a
+    {
+     padding: 15px 40px;
+    }
+    .intro p
+    {
+      font-size: 14px;
+      line-height: 30px;
+    }
+    /*======================
+        saas-01
+      ======================*/
+      .intro-saas-2 .banner-content .banner-inner .banner-text
+      {
+        width: 100%;
+        text-align: center;
+      }
+      .intro-saas-2 .banner-content .banner-inner
+      {
+        display: block;
+        padding-top: 100px;
+      }
+      .banner-img
+      {
+        width: 80%;
+        height: auto;
+        float: none;
+        margin: 0px auto;
+      }
+      .banner-img img
+      {
+        margin-top: 50px;
+      }
+      .intro-saas-2 .img-banner-saas-01
+      {
+        position: relative;
+      }
+      .intro-saas-2
+      {
+        height: auto;
+      }
+      .feature-type-2-inner.saas-01-feature ul li
+      {
+        width: 100% !important;
+      }
+  
+  /*======================
+    megamenu
+    ======================*/
+   .mega-dropdown-list ul 
+   {
+     margin-bottom: 20px;
+   }
+   .mega-dropdown-list ul li
+   {
+    list-style: none;
+   }
+   .mega-dropdown-list ul li a
+   {
+    text-transform: capitalize;
+    padding: 5px 0;
+   }
+   .mega-dropdown-list ul li p
+   {
+    color: #717171;
+    padding: 5px 0;
+   }
+   .mega-dropdown-list ul li h4
+   {
+    text-transform: capitalize;
+    color: #444;
+    font-weight: 400;
+   }
+    .mega-dropdown-list ul li h4 span
+   {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+    padding-top: 2px;
+    line-height: 23px;
+   }
+  /*======================
+    searchbox
+    ======================*/
+   .head-search {
+    margin-left: 20px;
+    margin-top: 3px;
+    position: absolute;
+    right: 60px;
+    top: 15px;
+    }
+
+    /*======================
+    typography
+    ======================*/
+    h1
+    {
+      font-size: 35px;
+    }
+    h2
+    {
+      font-size: 30px;
+    }
+    h3
+    {
+      font-size: 25px;
+    }
+    h4
+    {
+      font-size: 20px;
+    }
+    h5
+    {
+      font-size: 18px;
+    }
+    p.lead
+    {
+      font-size: 14px;
+      line-height: 28px;
+    }
+/*======================
+  navbar
+  ======================*/
+  .nav-brand
+  {
+    width: 160px;
+  }
+  .search
+  {
+    top: -50px;
+    right: 10px;
+  }
+  .nav.custom-menu > ul > li > a
+  {
+    padding: 10px 0 !important;
+  }
+  /*======================
+    banner
+  ======================*/
+  .block-banner,
+  .saas-small-banner,
+  .hosting-small-banner,
+  .gradient-small-banner
+  {
+    height: 200px;
+  }
+  /*======================
+    footer
+    ======================*/
+  .small-footer .tel-details,
+  .small-footer .copy-rights
+  {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+  /*======================
+    Tab Block
+    ======================*/
+    .isotop_tab .list-inline li
+    {
+      margin-bottom: 10px;
+    }
+
+  /*======================
+    Tab Block
+    ======================*/
+    .team-wrapper
+    {
+      margin-bottom: 20px;
+    }
+    
+    .pricing-box
+    {
+      width: 100%;
+    }
+    .price-4 .pricing-inner
+    {
+      margin-bottom: 20px;
+    }
+     .sub-input
+    {
+      margin-top: 20px;
+    }
+  /*===============================
+    Feature Blocks Page
+    ===============================*/
+
+    .feature-type-1-inner li
+    {
+      padding: 0px;
+      width: calc(100% / 2);
+      float: left;
+      border-radius: 0px;
+      border: 1px dotted #ccc;
+    }
+    .feature-type-1-inner li:nth-child(3n+1)
+    {
+      border-left: 1px dotted #ccc;
+    }
+    .feature-type-1-inner li:nth-child(3n+4),
+    .feature-type-1-inner li:nth-child(3n+5), 
+    .feature-type-1-inner li:nth-child(3n+6)
+    {
+      border-bottom: 1px dotted #ccc;
+    }
+
+   /*--------------------------
+    Feature Blocks Type-2
+    --------------------------*/     
+    .feature-type-2-inner ul li
+    {
+      width: 50%;
+      float: left;
+    }  
+   /*--------------------------
+    Feature Blocks Type-3
+    --------------------------*/     
+    .feature-type-3-inner ul li
+    {
+      float: left;
+    }
+    .feature-type-3-inner .card-body        
+    {
+      padding: 0px;
+    }
+
+  /*--------------------------
+    Feature Blocks Type-4
+    --------------------------*/     
+    .feature-type-4-inner ul li
+    {
+      width: 100%;
+      float: left;
+      padding: 0px;
+    }    
+    .feature-type-4-inner .card-body        
+    {
+      padding: 15px 50px;
+    }
+
+   /*--------------------------
+    Feature Blocks Type-5
+    --------------------------*/   
+    .feature-type-5-inner li
+    {
+      width:100% ;
+      padding: 0px;
+    }
+    
+    /*======================
+    client Blocks block
+    ======================*/
+    .client-3 .client-wrapper ul li a
+    {
+        text-align: center;
+        padding: 40px 20px;
+        box-shadow: 0 2px 12px 0px #ccc;
+        display: block;
+        margin-bottom: 15px;
+        width: 95%;
+    }
+
+    .counter-wrapper
+    {
+      text-align: center;
+    }
+    .counter-wrapper .feature-img 
+    {
+        width: 100%;
+        float: none;
+        clear: both;
+        display: table;
+    }
+    .counter-wrapper .feature-img img
+    {
+      width: 80px;
+      margin: 0 auto;
+      float: none;
+    }
+    .counter-wrapper .feature-desc
+    {
+      float: none;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      padding-left: 0px;
+    }
+    .counter-sec-spl .counter-item img,
+    .conter-3 .counter-item img
+    {
+      width: 60px;
+    }
+    .pricing-inner ul li
+    {
+      font-size: 14px;
+    }
+
+  /*======================
+    social icon block
+    ======================*/
+    .social-icons li
+    {
+      margin-bottom: 5px;
+    }  
+
+  /*===============================
+    checkbox/radio button block Page
+    ===============================*/
+   .btn-sec-block
+   {
+    margin: 50px 10px;
+    text-align: center;
+   }
+   .morder-check
+   {
+    text-align: center;
+   }
+   .check-it-div
+   {
+    margin-top: 20px;
+   }
+
+  /*===============================
+    button-block-page
+    ===============================*/
+    .button-style-sec
+    {
+      text-align: center;
+      padding: 100px 0 80px;
+    }
+    section.button-style .border 
+    {
+      margin-bottom: 20px;
+    }
+    .button-style-sec .row
+    {
+      margin-top: 0px !important;
+    }
+    .spl-head
+    {
+      padding: 10px 0;
+    }
+
+
+  /*===============================
+    saas page
+    ===============================*/
+    .saas-banner-container 
+    {
+      padding-top: 30px;
+    }
+    .saas-banner
+    {
+      height: 700px;
+    }
+    .saas-banner h3
+    {
+      line-height: 34px;
+    }
+    .hero-btn a
+    {
+      margin-bottom: 20px;
+    }
+    .saas-features .feature-type-2-inner ul li
+    {
+      width: 100%;
+    }
+    footer .logo-brand.sm-logo
+    {
+      text-align: center;
+    }
+    .footer-menu-list
+    {
+      padding: 20px 0;
+    }
+    .screen_list
+    {
+      padding: 60px 40px;
+    }
+    .list-inner-container
+    {
+      padding-top: 50px;
+      padding-left: 0px;
+    }
+    .saas-left-screen-des
+    {
+      padding-right: 0px;
+    }
+    .build-with p
+    {
+      font-size: 14px;
+      line-height: 30px;
+    }
+    .counter-wrapper .media-body p
+    {
+      font-size: 14px;
+    }
+
+  /*===============================
+    input block
+    ===============================*/
+    .input-block-page-style .form-group,
+    .input-block-page-style .col-md-4
+    {
+      margin-bottom: 20px;
+    }
+
+  /*===============================
+    Seo page
+    ===============================*/
+    .seo-banner
+    {
+      height:auto;
+      padding: 100px 0;
+    }
+    .seo-banner-content 
+    {
+    width: 100%;
+    }
+    .seo-banner-content h5
+    {
+      line-height: 27px;
+      font-size: 15px;
+    }
+    .video-sec-seo
+    {
+      padding: 50px 0 0;
+    }
+    .video-sec-seo .video-wrapper-seo
+    {
+      min-height: 300px;
+    }
+    .seo-service-wrapper
+    {
+      margin-bottom: 30px;
+    }
+    .feature-sec.seo-feature-wrapper
+    {
+      padding: 44px 0px 17px !important;
+    }
+    .seo-services
+    {
+      padding: 45px 0 20px !important;
+    }
+    .seo-services .row
+    {
+      padding-bottom: 5px !important;
+    }
+    .screen_list
+    {
+      padding-bottom: 0px;
+    }
+    .seo-effective-content p
+    {
+      margin-bottom: 0px;
+    }
+    .seo-price-sec .pricing-wrapper
+    {
+      padding: 92px 0 78px;
+    }
+    .seo-counter.counter-sec
+    {
+      padding: 50px 0 30px;
+    }
+    .seo_check_up 
+    {
+      padding-top: 45px;
+    }
+    .effective-seo-head p
+    {
+      line-height: 30px;
+    }
+
+  /*===============================
+    hosting page
+    ===============================*/
+    .hosting-inner-content
+    {
+      padding: 0 20px;
+    }
+    .hosting-inner-content h5
+    {
+      line-height: 26px;
+      font-size: 16px;
+    }
+    .hosting-banner
+    {
+      padding: 60px 0;
+      height: auto;
+    }
+    .default-check .inline
+    {
+      margin-right: 0px;
+    }
+    .feature-img img,
+    .feature-desc
+    {
+      margin: 0 auto;
+      /*text-align: center !important;*/
+      float: left;
+    }
+    .saas-mobile img,
+    .saas-desk img
+    {
+      display: none;
+      width: 65%;
+    }
+    .hosting-pricing
+    {
+      margin-bottom: 20px;
+    }
+    .hosting-pricing .pricing-wrapper
+    {
+      padding: 92px 0 77px;
+    }
+  /*===============================
+    collapse-block
+    ===============================*/
+    .color_collapse .card-body,
+    .outline_collapse .card-body,
+    .default_collapse .card-body
+    {
+      font-size: 14px;
+      line-height: 26px;
+    }
+  /*===============================
+    blog page
+    ===============================*/
+    .seo-blog 
+    {
+      padding: 50px 0px 0;
+    }
+    /*===============================
+    blog page
+    ===============================*/
+    .counter-4 .counter-item
+    {
+      margin-bottom: 30px;
+    }
+  /*===============================
+    banners
+    ===============================*/
+    .d-height
+    {
+      height: auto !important; 
+    }
+    .saas-slider-main-wrapper,
+    .saas-slider-main-wrapper .carousel,
+    .saas-slider-main-wrapper .carousel .carousel-item,
+    .saas-slider-main-wrapper .carousel .carousel-inner,
+    .saas-slider-main-wrapper .carousel .first-slide,
+    .saas-slider-main-wrapper .carousel .second-slide,
+    .saas-slider-main-wrapper .carousel .third-slide
+    {
+        height: auto;
+    }
+    .parallex-banner .agency-entry-content
+    {
+      padding: 100px 0;
+    }
+    .gradient-inner .agency-entry-content
+    {
+      position: relative;
+      padding-top: 80px;
+    }
+    .saa-slider-v1 .saas-inner-slider .agency-entry-content
+    {
+      position: relative;
+      padding-top: 80px;
+    }
+    .agency-main-inner.agency-entry-content
+    {
+      padding: 100px 20px;
+    }
+
+    .typing-banner .type-wrap h2
+    {
+      display: block;
+    }
+    .typing-banner .type-wrap span#typed
+    {
+      font-size: 30px !important;
+    }
+    .agency-entry-content img
+    {
+      max-width: 100%;
+      padding: 0 50px;
+    }
+    .gradient-banner .first-slide
+    {
+      height: auto !important;
+    }
+    .gradient-inner
+    {
+      margin: 0 auto;
+    }
+  /*--------------------------------------------
+    12.5 video-banner
+    --------------------------------------------*/
+    .home-banner.video-option
+    {
+      height: auto !important;
+    }
+    .video-banner-overlay
+    {
+      padding: 70px 0;
+    }
+    .agency-entry-content.text-left
+    {
+      padding: 0px !important;
+    }
+ /*===============================
+    carousal-block
+    ===============================*/
+    .carousal-wrapper .swiper-wrapper.vertical-swipper 
+    {
+      max-height: 500px;
+    }
+    /*===============================
+    banner-page
+    ===============================*/
+    .agency-entry-content.text-left
+    {
+      padding: 70px 0;
+    }
+    .saas-desk
+    {
+      padding: 0px;
+    }
+
+    /*===============================
+      contact
+     ===============================*/
+    .hosting-form-wrapper,
+    .saas-contact-main
+    {
+      padding: 30px 20px 50px;
+    }
+
+    /*===============================
+    Mobile app
+    ===============================*/
+    .mobile-banner
+    {
+     height: auto;
+     position: relative;
+     padding: 50px 0px;
+    }
+    .img-mobile-banner img
+    {
+      position: relative;
+      display: none;
+    }
+    .mobile-banner::before
+    {
+      height: 100px;
+    }
+    .mobile-content-inner a img
+    {
+      width: 100px;
+    }
+    .service-app-content p.lead,
+    .elegant-app p
+    {
+      width: 100%;
+    }
+    .new-mobile li
+    {
+      width: 100%;
+    }
+    .left-side-info,
+    .right-side-info
+    {
+      text-align: center;
+    }
+    .new-mobile li .mobile-img
+    {
+      width: 50%;
+      margin: 50px auto;
+    }
+    .contact-mobile-content
+    {
+      margin-bottom: 50px;
+    }
+    .footer.mobile-footer .logo-brand.sm-logo
+    {
+      text-align: left !important;
+    }
+    .mobile-banner::before 
+    {
+      height: 0px;
+    }
+    .img-mobile-banner
+    {
+      height: auto;
+    }
+    /*===============================
+      saas-01
+    ===============================*/
+    .saas-01-nav .navbar-nav
+    {
+      float: none;
+    }
+    .navbar.saas-01-nav .nav-item .nav-link
+    {
+      padding: 10px 10px 15px !important;
+    }
+
+
+}
+@media screen and (width: 768px)
+{
+    .saas-mobile img,
+    .saas-desk img
+    {
+      display: block;
+      width: 65%;
+      margin: 26px auto;
+    }
+    .feature-img
+    {
+      text-align: center;
+    }
+    .list-inner-container
+    {
+      padding-top: 0;
+      padding-left: 30px;
+      padding-right: 0px;
+    }
+    .video-sec-seo .list-inner-container {
+        min-height: 400px;
+        padding-top: 00px;
+    }
+    .video-sec-seo .video-wrapper-seo
+    {
+      padding: 0px;
+      background: url("../images/video-back.svg") no-repeat center;
+      background-size:cover; 
+      min-height: 400px;
+    }
+
+    /*===============================
+    counter block
+    ===============================*/
+
+    .feature-type-5-inner li
+    {
+      width: calc(100% / 3) !important;
+    }
+
+    .logo-brand.sm-logo h3
+    {
+      padding-top: 10px;
+    }
+
+  /*===============================
+    mobile app
+    ===============================*/
+    .img-mobile-banner img
+    {
+      position: relative;
+      display: block;
+    }
+    .mobile-banner::before
+    {
+      height: 130px;
+    }
+
+    /*======================
+        saas-01
+      ======================*/
+      .intro-saas-2 .banner-content .banner-inner .banner-text
+      {
+        width: 100%;
+        text-align: center;
+      }
+      .intro-saas-2 .banner-content .banner-inner
+      {
+        display: block;
+        padding-top: 100px;
+      }
+      .banner-img
+      {
+        width: 80%;
+        height: auto;
+        float: none;
+        margin: 0px auto;
+      }
+      .banner-img img
+      {
+        margin-top: 50px;
+      }
+      .intro-saas-2 .img-banner-saas-01
+      {
+        position: relative;
+      }
+      .intro-saas-2
+      {
+        height: auto;
+      }
+      .feature-type-2-inner.saas-01-feature ul li
+      {
+        width: 100% !important;
+      }
+      .chat-box
+      {
+        display: none;
+      }
+    /*-----------------------
+      header
+      ----------------------*/
+      .saas-01-nav .navbar-nav
+      {
+        float: none;
+      }
+      .navbar.saas-01-nav .nav-item .nav-link
+      {
+        padding: 10px 10px 15px !important;
+      }
+
+
+}
+@media screen and (max-width: 650px)
+{
+   /*===============================
+    carousal-block
+    ===============================*/
+    .carousal-wrapper .swiper-wrapper.vertical-swipper 
+    {
+      max-height: 350px;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+/*======================
+  searchbox
+  ======================*/
+  h4
+  {
+    font-size: 17px;
+    line-height: 25px;
+  }
+/*  .btn
+  {
+   max-width: 80px;
+   font-size: 11px !important; 
+  }*/
+ .head-search {
+  margin-left: 20px;
+  margin-top: 3px;
+  position: absolute;
+  right: 30px;
+  top: 9px;
+  }
+  .navbar-brand
+  {
+    width: 165px;
+  }
+  .header-button a
+  {
+    font-size: 11px;
+    height: 30px;
+    padding: .375rem 6px;
+    margin-top: 4px;
+  }
+  .header-button
+  {
+    top: 8px;
+    right: 28px;
+  }
+  .navbar-toggler
+  {
+    padding: 0px;
+  }
+  .table-export-btn
+  {
+    float: left;
+    width: 100%;
+  }
+  .default-tab .nav-tabs .nav-item
+  {
+    width: 100%;
+  }
+  .md-logo h3
+  {
+    font-size: 23px;
+    line-height: 20px;
+  }
+  .header-button
+  {
+    margin-top: 0px;
+    top: 0px;
+  }
+  .header-button a
+  {
+    margin-top: 0px;
+  }
+/*========================
+  button section
+  ========================*/
+  section.button-style .border 
+  {
+    margin-bottom: 20px;
+  }
+  .button-style-sec
+  {
+    padding: 44px 0 30px;
+  }
+  .button-style-sec .row
+  {
+    margin-top:0px !important;
+  }
+  .spl-head
+  {
+    padding:10px 0;
+  }
+/*========================
+  alert section
+  ========================*/
+  .alert-block-wrapper
+  {
+    margin-bottom: 20px;
+  }
+  .custom-alerts  
+  {
+    padding: 44px 0 30px;
+  }
+  .alert-block
+  {
+    padding: 50px 0 28px;
+  }
+  .alert-block .row
+  {
+    margin-top: 0px !important;
+  }
+  /*========================
+    tab section
+    ========================*/
+  .default-tab .nav-item a
+  {
+    border:1px solid #ccc;
+    border-radius: 0px;
+  }
+  .boxed-tab .nav-tabs .nav-link
+  {
+    border-left: 1px solid #64baf0;
+  }
+  .radius-fl-tab .nav-tabs li:first-child,
+  .radius-fl-tab .nav-tabs li:first-child a,
+  .radius-fl-tab .nav-tabs li:last-child,
+  .radius-fl-tab .nav-tabs li:last-child a
+  {
+    border-radius: 0px !important;
+  }
+  .margin-tab-list .nav-tabs li
+  {
+    margin-bottom: 5px;
+  }
+  .tab-section
+  {
+    padding-top: 50px;
+  }
+  .tab-spl
+  {
+    margin-top: 0px;
+    padding-bottom: 20px !important;
+  }
+  .gallery-isotop
+  {
+    margin: 50px 0 ;
+  }
+  .tab-head
+  {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  /*======================
+    subscribe block
+    ======================*/
+    .sub-input a
+    {
+      width: auto;
+    }
+    .sub-input input.custom-input
+    {
+      width:100%;
+      margin-bottom: 5px;
+    }
+    .sub-input
+    {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .sub-input-2 input
+    {
+      border-radius: 30px !important;
+    }
+    .sub-input-2 a
+    {
+      border-radius:30px;
+    }
+    .sub-input-3 a
+    {
+      float: none;
+      width: 150px;
+      margin: 0 auto;
+    }
+    .sub-input-4
+    {
+      background: none;
+    }
+    .sub-input-4 input
+    {
+      background: #fff;
+      border-radius: 50px !important;
+    }
+    .sub-input-4 input:focus
+    {
+      background: #fff;
+      border-radius: 50px !important; 
+    }
+    .sub-input button
+    {
+      width: auto;
+      float: none;
+    }
+    .sub-input-2 button
+    {
+      border-radius: 30px;
+    }
+    .sub-input-3 button
+    {
+      display: unset;
+    }
+    .subscribe-sec
+    {
+      padding: 50px 0;
+    }
+    .subscribe-inner-type-3
+    {
+      text-align: center !important;
+    }
+    /*===============================
+    Feature Blocks Page
+    ===============================*/
+
+    .feature-type-1-inner li
+    {
+      padding: 0px;
+      width: calc(100%);
+      float: left;
+      border-radius: 0px;
+      border: 1px dotted #ccc;
+    }
+    .feature-type-1-inner li:nth-child(3n+1)
+    {
+      border-left: 1px dotted #ccc;
+    }
+    .feature-type-1-inner li:nth-child(3n+4),
+    .feature-type-1-inner li:nth-child(3n+5), 
+    .feature-type-1-inner li:nth-child(3n+6)
+    {
+      border-bottom: 1px dotted #ccc;
+    }
+    .feature-sec
+    {
+      padding: 50px 0px;
+    }
+    .feature-sec-spl
+    {
+      padding: 50px 0px 15px;
+    }
+    .feature-sec-type-no
+    {
+      padding: 50px 0 20px;
+    }
+   /*--------------------------
+    Feature Blocks Type-2
+    --------------------------*/     
+    .feature-type-2-inner ul li
+    {
+      width: 100%;
+      float: left;
+      padding: 0px;
+    }   
+   /*--------------------------
+    Feature Blocks Type-3
+    --------------------------*/     
+    .feature-type-3-inner ul li
+    {
+      width: 100%;
+      float: left;
+      padding: 0px;
+    }    
+    .feature-type-3-inner .card-body        
+    {
+      padding: 15px 50px;
+    }     
+
+   /*--------------------------
+    Feature Blocks Type-4
+    --------------------------*/     
+    .feature-type-4-inner ul li
+    {
+      width: 100%;
+      float: left;
+      padding: 0px;
+    }    
+    .feature-type-4-inner .card-body        
+    {
+      padding: 15px 50px;
+    }     
+    /*--------------------------
+      Feature Blocks Type-5
+      --------------------------*/   
+      .feature-type-5-inner li
+      {
+        width:100% ;
+        padding: 0px;
+      }
+
+  /*===============================
+    progress bar Page
+    ===============================*/
+    .progress-bar-sec.progress-bar-wrapper
+    {
+      padding: 0px;
+    }
+    .progress-bar-sec.progress-bar-wrapper.progress-bar-bottom
+    {
+     padding-bottom: 20px; 
+    }
+    .progress-bar-sec.progress-bar-wrapper.progress-bar-top
+    {
+      padding-top: 50px;
+    }
+
+  /*========================
+    table secion    
+    ========================*/
+    .table-block-wrapper
+    {
+      margin:50px 0 0px !important;
+    }
+
+ /*===============================
+    card block Page
+   ===============================*/   
+   .default-card-block
+   {
+    padding: 32px 0;
+   }
+
+  /*===============================
+    pricing section
+    ===============================*/ 
+    .pricing-wrapper
+    {
+      padding: 42px 0 30px;
+    }
+
+   /*===============================
+    carousal block Page
+   ===============================*/   
+   .carousal-sec
+   {
+    padding: 30px 0 50px;
+   }
+
+  /*===============================
+    collapse sec
+   ===============================*/  
+   .collapse-sec-block
+   {
+    padding: 46px 0 0;
+   }
+   .bottom-col-sec
+   {
+    padding: 46px 0 36px;
+   }
+
+   /*========================
+    modal section
+    ========================*/
+    .modal-blocks
+    {
+      padding-bottom: 30px;
+    }
+  /*===============================
+    checkbox/radio button block Page
+    ===============================*/
+   .btn-sec-block
+   {
+    margin: 50px 10px;
+    text-align: center;
+   }
+   .morder-check
+   {
+    text-align: center;
+   }
+   .default-check .inline:last-child
+   {
+    margin-bottom: 0px;
+   }
+   .check-it-div
+   {
+    margin-top: 20px;
+   }
+
+ /*========================
+  counter up section
+  ========================*/
+  .counter-new-padding
+  {
+    padding: 30px 0 31px !important;
+  }
+  .counter-new-padding-spl
+  {
+    padding: 30px 0 50px !important;
+  }
+
+  /*===============================
+    Saas Page
+    ===============================*/
+    .saas-banner h3
+    {
+      line-height: 34px;
+      font-size: 18px;
+    }
+    .saas-banner
+    {
+      height: 560px;
+    }
+    a.try-btn,
+    a.explore-btn
+    {
+      padding: 20px;
+      font-size:11px;
+    }
+    .saas-features
+    {
+      padding: 26px 0px 10px;
+    }
+    .saas-features .feature-head h3
+    {
+      padding-bottom: 20px;
+    }
+    .list-inner-container .explore-bt
+    {
+      padding: 13px 20px;
+    }
+    .saas-card
+    {
+      padding: 50px 0 28px;
+    }
+    .saas-pricing
+    {
+      padding: 50px 0 15px;
+    }
+    .build-with 
+    {
+      padding: 46px 0 25px;
+    }
+    .card-default
+    {
+      margin-bottom: 20px;
+    }
+  /*===============================
+    Seo page
+    ===============================*/
+    .form-check
+    {
+      display: block;
+    }
+    .seo_check_up
+    {
+      padding-top:42px; 
+    }
+    .form-check input
+    {
+      width: 100%;
+      display: block;
+      margin: 10px 0;
+    }
+    .seo-service-wrapper
+    {
+      margin-bottom: 20px;
+    }
+    .seo-services 
+    {
+      padding: 50px 0 0;
+    }
+    .effective-seo
+    {
+      padding: 0px;
+    }
+    .list-effective .seo-effective-content
+    {
+      margin-bottom: 50px;
+    }
+    .counter-4 .counter-item
+    {
+      margin-bottom: 20px;
+    }
+    .screen_list
+    {
+      padding:50px 20px 65px;
+    }
+    .seo-banner-btn .seo-start-btn-1
+    {
+      display: block;
+      margin-top: 20px;
+      height: 50px;
+    }
+    .counter-item.with-shadow img
+    {
+      width: 50px !important;
+      margin-bottom: 10px;
+    }
+    .seo-banner-btn .seo-start-btn-1.border-line-seo
+    {
+      margin:10px 0px;
+    }
+      .counter-item.with-shadow img
+    {
+      width: 70px !important;
+    }
+    .seo-price-sec .pricing-wrapper
+    {
+      border:1px solid #eee;
+      padding: 43px 0 0px;
+    }
+    .counter-sec
+    {
+      padding: 49px 0 31px;
+    }
+    .seo-footer
+    {
+      background: #151414 !important;
+    }
+      /*===============================
+    Seo page
+    ===============================*/
+    .seo-banner
+    {
+      height:auto;
+      padding: 50px 0;
+    }
+  /*===============================
+    hosting page
+    ===============================*/
+    .hosting-banner
+    {
+      padding: 60px 0;
+      height: auto;
+    }
+    .hosting-btn-element
+    {
+      width: 60px !important;
+    }
+    .domain-search-input input
+    {
+      font-size: 13px;
+      border-radius: 30px;
+      display: block;
+      margin: 0 auto;
+    }
+    .domain-search-input a
+    {
+      height: 30px;
+      border-radius: 30px;
+      font-size: 11px;
+      padding: 7px 11px;
+      margin-top: 10px;
+    }
+    .default-check .inline
+    {
+      width: 100%;
+      margin-right: 0;
+    }
+    .check-wrapper
+    {
+      text-align: left;
+      width: 100px;
+      margin: 0 auto;
+    }
+    .check-wrapper
+    {
+      text-align: center;
+      width: 100%;
+    }
+    .custom-radio input[type="radio"] + .radio-label::before
+    {
+      display: block;
+      margin: 0 auto;
+    }
+    .default-check .inline
+    {
+      margin-bottom: 20px;
+    }
+    .hosting-black,
+    .hosting-white
+    {
+      padding: 10px 0;
+      font-size: 12px;
+    }
+    .pricing-box
+    {
+      margin-bottom:10px;
+    }
+    .why-hosting
+    {
+      padding: 45px 0;
+    }
+    .why-hosting img
+    {
+      margin-bottom: 30px
+    }
+    .feature-sec.hosting-features-sec
+    {
+      padding: 50px 0 27px;
+    }
+    .feature-head
+    {
+      padding-bottom: 20px
+    }
+    .hosting-video
+    {
+      padding: 46px 0;
+    }
+    .hosting-footer
+    {
+      padding: 36px 0 0;
+    }
+    .hosting-small-footer
+    {
+      margin-top: 30px;
+    }
+
+  /*===============================
+    saas-contact
+    ===============================*/
+
+    .saas-form-contact .form-control
+    {
+      width: 100%;
+    }
+    .saas-contact-wrapper .feature-img
+    {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .saas-contact-wrapper .feature-desc
+    {
+      text-align: left !important;
+      width: 100%;
+      padding-left: 0px;
+    }
+    .saas-price-sec .pricing-wrapper
+    {
+      padding: 45px 0 40px
+    }
+    .saas-footer 
+    {
+      padding: 35px 0 25px;
+      background-color: #fff;
+    }
+    .normal-footer .saas-footer 
+    {
+      margin-top: 42px !important;
+    }
+
+  /*===============================
+    seo-contact
+    ===============================*/
+    .feature-img img, .feature-desc
+    {
+      text-align: center;
+      float: none;
+    }
+    .saas-contact-wrapper .feature-img
+    {
+      text-align: center;
+    }
+    .saas-contact-wrapper .feature-desc
+    {
+      text-align: center !important;
+    }
+
+  /*===============================
+    sign up
+    ===============================*/
+    .check-wrapper
+    {
+      margin: 0 !important;
+    }
+    .default-check .inline
+    {
+      margin-bottom: 10px;
+    }
+     /*===============================
+    carousal-block
+    ===============================*/
+    .carousal-wrapper .swiper-wrapper.vertical-swipper 
+    {
+      max-height:260px;
+    }
+
+    .footer-menu-list li
+    {
+      padding: 0px 5px;
+    }
+    .footer-menu-list li a
+    {
+      font-size: 12px;
+    }
+
+  /*===============================
+    client-block-page
+    ===============================*/
+    .client-sec
+    {
+      padding: 42px 0 22px;
+    }
+    .client-wrapper ul li
+    {
+      margin:5px 0;
+    }
+    .client-2 .client-wrapper ul li a
+    {
+      padding: 18px 0px;
+    }
+    .client-3 .client-wrapper ul li a
+    {
+      padding: 20px 0px;
+    }
+    .boxed-cl-sec
+    {
+      padding: 44px 0 25px !important;
+    }
+    .shadow-client-sec
+    {
+      padding:44px 0 20px !important
+    }
+    .gray-clnt-sec
+    {
+      padding: 45px 0 18px;
+    }
+    .caro-sec
+    {
+      padding: 45px 0 37px;
+    }
+
+  /*===============================
+    input-block-page
+    ===============================*/
+    .input-block-page-style .small-heading
+    {
+      padding-top: 50px;
+    }
+    .custom-lightbox
+    {
+      padding-top: 50px;
+    }
+    .custom-lightbox .col-md-3
+    {
+      margin-bottom: 20px;
+    }
+    .modal-wrapper-block .col-md-4
+    {
+      margin-bottom: 20px;
+    }
+    .input-block-wrapper .row
+    {
+      margin-bottom: 0px;
+    }
+    .input-block-page-style .form-group
+    {
+      margin-bottom: 0px;
+    }
+    section.button-style .border.input-block-wrapper
+    {
+      margin-bottom: 0px;
+    }
+    .material-wrapper-input
+    {
+      padding: 30px !important;
+    }
+    .upload-first-wrapper
+    {
+      margin-bottom: 30px;
+    }
+    .input-block-page-style
+    {
+      padding-bottom:30px;
+    }
+
+
+  /*===============================
+    progress-block-page
+    ===============================*/
+    .progress-wrapper
+    {
+      margin-bottom: 30px;
+    }    
+    .progress-bar-sec
+    {
+      padding:40px 0 30px;
+    }
+
+  /*===============================
+    progress-block-page
+    ===============================*/
+    .subscribe-sec
+    {
+      text-align: center;
+    }
+
+ /*===============================
+    table-block-page
+    ===============================*/
+    .table-sec-block
+    {
+      padding: 0px 0;
+    }
+    .custom-table
+    {
+      padding: 50px 0;
+    }
+
+  /*===============================
+    testimonial-block-page
+    ===============================*/
+    .shadow_testimonial .simple_testi_wrapper
+    {
+      margin-bottom: 20px;
+    }
+    .gender-check
+    {
+      margin-bottom: 25px !important;
+    }
+    .simple_testimonial
+    {
+      padding: 47px 0 10px
+    }
+    .simple_testimonial-spl
+    {
+      padding: 47px 0 30px;
+    }
+    .testimonial_items .owl-nav
+    {
+      margin: 0px;
+    }
+    .testimonial_items .owl-dots
+    {
+      margin-bottom:6px;
+    }
+  /*===============================
+    index-page
+    ===============================*/
+    .buid-anything ul li a span
+    {
+      font-size: 10px;
+    }
+    .buid-anything ul li i
+    {
+      width: 80px;
+      font-size: 35px;
+    }
+    .total-gap
+    {
+      padding: 47px 0 26px;
+    }
+    .preview-list
+    {
+      padding: 42px 0 18px;
+    }
+    .gradient-inner .agency-entry-content
+    {
+      padding:100px 30px 0;
+    }
+    .agency-entry-content img
+    {
+      max-width: 100%;
+      padding: 0;
+    }
+    /*======================================
+      mobile app
+      ======================================*/
+      .new-mobile li .mobile-img
+      {
+        width: 100%;
+      }
+      .service-app
+      {
+        padding: 53px 0 16px;
+      }
+      .screen-short
+      {
+        padding: 55px 0;
+      }
+      .video-tour {
+          padding: 50px 0 60px;
+      }
+      .app-heading
+      {
+        width: 100%;
+      }
+      .mobile-middle-list 
+      {
+        padding: 52px 0 40px;
+      }
+      .mobile-pricing 
+      {
+        padding-bottom: 0px;
+      }
+      .mobile-pricing .pricing-wrapper
+      {
+        padding-top: 0px;
+      }
+      .mobile-pricing .pricing-wrapper p
+      {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+      }
+      .mobile-pricing .pricing-wrapper .intro
+      {
+        padding-bottom: 0px;
+      }
+
+      /*=======================
+        saas-01
+        =======================*/
+        /*-----------------------
+          header
+          ----------------------*/
+          .saas-01-nav .navbar-nav
+          {
+            float: none;
+          }
+          .navbar.saas-01-nav .nav-item .nav-link
+          {
+            padding: 10px 10px 15px !important;
+          }
+        .banner-text-saas-01 h2
+        {
+          font-size: 25px;
+        }
+        .intro-saas-2 .banner-content h5
+        {
+          font-size: 17px;
+          line-height: 26px;
+        }
+        .outline-btn-saas
+        {
+          margin-left: 5px;
+        }
+        .fill-btn-saas, 
+        .outline-btn-saas
+        {
+          height: 35px;
+          font-size: 10px;
+        }
+        .chat-box
+        {
+          display: none;
+        }
+        .feature-sec-spl.feature-sec-saas-01
+        {
+          padding: 50px 0;
+        }
+        .settings-service-saas
+        {
+          margin-top: 50px;
+        }
+        .contact-sec-saas-01
+        {
+          padding: 30px 0;
+        }
+	
+}

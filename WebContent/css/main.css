@@ -1,0 +1,736 @@
+/*-------------------------------------------------------------------------------------
+Theme Name: SuperElement
+Theme URI:  
+Version:    1.0
+Author: Pentathemes
+-------------------------------------------------------------------------------------*/
+/**
+****************************************
+@File: SuperElements Theme main Styles
+
+* This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+
+
+content table
+
+01.IMPORT FONT
+02.TYPOGRAPHY
+03.LIST STYLE 
+04.BUTTON STYLE
+05.INPUT STYLE
+06.LABEL STYLE
+07.TABLE STYLE
+08.ALERT STYLE
+09.COLLAPSE STYLE
+10.PROGRESS BAR STYLE
+
+
+/*==================================
+    01.IMPORT FONT
+  ====================================*/
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Quicksand:300,400,500,700');
+
+/*=====================
+  02. TYPOGRAPHY
+  =====================*/
+  h1,h2,h3,h4,h5,h6
+  {
+    font-weight: 700;
+  }
+  h1
+  {
+    font-size: 55px;
+  }
+  h2
+  {
+    font-size: 45px;
+  }
+  h3
+  {
+    font-size: 35px;
+  }
+  h4
+  {
+    font-size: 25px;
+  }
+  h5
+  {
+    font-size: 20px;
+  }
+  h6
+  {
+    font-size: 16px;
+  }
+
+  p
+  {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  p.lead
+  {
+    font-size: 17px;
+    line-height: 27px;
+  }
+  p.small-text
+  {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  label.error,
+  p.error
+  {
+    color: red !important;
+  }
+  button:focus,
+  a:hover,
+  a:focus,
+  input:focus,
+  textarea:focus
+  {
+    text-decoration:none;
+    outline: none;
+  }
+  del
+  {
+    color: #ccc;
+  }
+  .nt
+  {
+    color: #2f6f9f;
+  }
+  .na 
+  {
+      color: #4f9fcf;
+  }
+  .s {
+      color: #d44950;
+  }
+
+/*=====================
+  03. LIST STYLE 
+  =====================*/
+
+ul.no-padding
+{
+  padding: 0px;
+  margin: 0px;
+}
+ul.custom
+{
+  padding-left:0px;
+}
+ul.custom li
+{
+  list-style: none;
+  position: relative;
+}
+ul.custom li:before
+{
+  content: "\e661";
+  font-family: 'themify';
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+/*=====================
+  04. BUTTON STYLE
+  =====================*/
+
+  button
+  {
+    font-size: 14px !important;
+  }
+  .btn
+  {
+    border-radius: 0px;
+    width: 120px;
+    margin-bottom: 5px;
+    height: 40px;
+  }
+  .sa-confirm-button-container .btn,
+  .sa-button-container .btn
+  {
+    height: auto !important;
+    box-shadow: none !important;
+  }
+  .btn-bold
+  {
+    font-weight: 500;
+  }
+  .btn-round
+  {
+    border-radius: 50px;
+  }
+  .btn-default
+  {
+    background: #00BCD4;
+    border:#00BCD4;
+    color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  }
+  .btn-default:hover
+  {
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+  }
+  .btn-default:focus
+  {
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+  }
+  .btn-primary
+  {
+    background: #3e9bfb;
+    border-color: #3e9bfb;
+  }
+  .btn-secondary
+  {
+    background: #b1b1b1;
+    border-color: #b1b1b1;
+  }
+  .btn-success
+  {
+    background: #0ad188;
+    border-color: #0ad188;
+  }
+  .btn-info
+  {
+    background: #31d1ea;
+    border-color: #31d1ea;
+  }
+  .btn-outline-primary
+  {
+    color: #3e9bfb;
+    border-color: #3e9bfb;
+  }
+  .btn-flat.primary
+  {
+    color: #3e9bfb;
+  }
+  .btn-flat.success
+  {
+    color: #0ad188;
+  }
+  .btn-flat.info
+  {
+    color: #31d1ea;
+  }
+  .btn-flat.danger
+  {
+    color: #dc3545;
+  }
+  .btn-flat.warning
+  {
+    color: #ffc107;
+  }
+  .btn-flat.light
+  {
+    color: #aaa;
+  }
+  .icon-btn
+  {
+    text-align: left;
+    padding: 0px;
+    border:0px;
+    vertical-align: middle;
+    height:40px;
+  }
+  .icon-btn i
+  {
+    width: 35px;
+    height: 100%;
+    background: #000;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right:   10px;
+  }
+  .icon-btn.btn-primary i
+  {
+    background: #0666c9;
+  }
+  .icon-btn.btn-success i
+  {
+    background: #039b55;
+  }
+  .icon-btn.btn-danger i
+  {
+    background: #b92323;
+  }
+  .icon-btn.btn-info i
+  {
+    background: #00b5bd;
+  }
+  .icon-btn i:before
+  {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  vertical-align: middle;
+  padding-top: 12px;
+  }
+  .btn-square
+  {
+    width: 40px;
+    height: 40px;
+  }
+  .btn-multiline
+  {
+    padding: 15px 0;
+    height: auto;
+  }
+  .btn-multiline i
+  {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .btn.btn-lg
+  {
+    height: 50px;
+    width: 150px;
+  }
+  .btn.btn-sm
+  {
+    height: 30px;
+    font-size: 12px !important;
+  }
+  .btn.btn-xs
+  {
+    height: 25px;
+    font-size: 12px !important;
+    line-height: 0px;
+    width: 100px;
+  }
+  .btn-block
+  {
+    width: 100%;
+  }
+
+  .btn-sign-in
+  {
+    width: 100%;
+    max-width: 350px;
+    background: #000;
+    color: #fff;
+  }
+  .btn-sign-in i
+  {
+    padding-right: 10px;
+  }
+  .fb
+  {
+    background: #3b5998;
+  }
+  .twitter
+  {
+    background: #1da1f2;
+  }
+  .google-pluse
+  {
+    background: #ea4335;
+  }
+
+/*=====================
+  05. INPUT STYLE
+  =====================*/
+
+  .custom-input
+  {
+    width: 100%;
+    height: 40px;
+    border-radius: 2px !important;
+    transition: .3s ease-in;
+    border:1px solid #ccc;
+    font-size: 13px;
+  }
+  .custom-input:focus
+  {
+    border:1px solid #1de8f1;
+    box-shadow:none;
+  }
+  .input-block-wrapper code
+  {
+    display: inline-block;
+    padding:0px; 
+  }
+  .custom-input[readonly=""]
+  {
+    background: none;
+  }
+  .form-group
+  {
+    margin: 0px;
+  }
+  .form-group label
+  {
+    margin: 0px 0 12px !important;
+    padding: 0px;
+    font-size: 14px;
+    line-height: 1;
+    display: block;
+  }
+  label.help
+  {
+    font-size: 12px;
+    padding:6px 0;
+    margin-bottom: 3px !important;
+    display: block;
+  }
+
+  .round-input
+  {
+    border-radius: 50px !important;
+  }
+  .line-input
+  {
+    border-bottom:1px solid #ccc;
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+    background: none;
+
+  }
+  .line-input:focus
+  {
+    border-top:0;
+    border-left:0;
+    border-right:0;
+  }
+  .input-group-addon
+  {
+    background: #00d0f5 !important;
+    border-radius: 0px;
+    border-color: #00d0f5;
+    color: #fff;
+  }
+
+  /* form starting stylings ------------------------------- */
+.group        
+{ 
+  position:relative; 
+}
+.group input         
+{
+  font-size:14px;
+  padding:0.625em  0.625em 0.625em 0.3125em;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+.group input:focus 
+{
+  outline:none;
+  border-bottom: 0px;
+}
+
+/*=====================
+  06. LABEL STYLE
+  =====================*/
+.group label {
+  color:#999; 
+  font-size:14px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:0.3125em;
+  top:0.625em;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+.group input:focus ~ label, .group input:valid ~ label    {
+  top:-10px;
+  left: -2px;
+  font-size:12px;
+  color:#bbb;
+  border:0px !important;
+}
+
+/* bottom bar */
+.group .bar  
+{
+  position:relative;
+  display:block;
+}
+
+.group .bar:before, .bar:after   
+{
+  content:'';
+  height:1px; 
+  width:0;
+  position:absolute;
+  background:#1de8f1; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.group .bar:before 
+{
+  left:50%;
+}
+.group .bar:after 
+{
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after 
+{
+  width:50%;
+}
+.dropdown-item
+{
+  font-size: 14px;
+}
+
+label.error
+{
+  color: red
+}
+
+/*=====================
+  07. TABLE STYLE
+  =====================*/
+
+  .table td, .table th
+  {
+    font-size: 13px;
+  }
+  .table td.table-property a
+  {
+    margin-left: 10px;
+  }
+  .table td.table-property a>i
+  {
+    color: #000;
+    font-size: 15px;
+  }
+  td a i
+  {
+    color: #aaa !important;
+  }
+
+  /*-----------------------------
+    custom table
+    ----------------------------*/
+
+  .table-filter
+  {
+    max-width: 250px;
+    margin-bottom: 20px;
+    float: left;
+  }
+  .table-filter input
+  {
+    padding: 0 20px;
+  }
+  .table-export-btn
+  {
+    float: right;
+  }
+  .table-export-btn .btn:focus
+  {
+    box-shadow: none;
+  }
+  .table-export-btn li
+  {
+    display: inline-block;
+  }
+
+  .table-export-btn li button
+  {
+    border:1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    color: #999;
+  }
+  .table-export-btn li > a
+  {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border:1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+  }
+
+    /*=====================
+      08. ALERT STYLE
+      =====================*/
+    .alert
+    {
+      font-size: 14px;
+      border-radius: 0px;
+    }
+    .co-alert
+    {
+      background: #f9f9f9;
+      position: relative;
+    }
+    .co-alert.alert-dismissible .close
+    {
+      top: 23%;
+    }
+    .co-alert p
+    {
+      margin-bottom: 0px;
+    }
+    .co-alert h5
+    {
+      font-weight: 500;
+    }
+    .co-alert-success
+    {
+      border-left: 3px solid #05d77c;
+    }
+    .co-alert-success h5  
+    {
+      color:#05d77c;
+    }
+    .co-alert-danger  
+    {
+      border-left: 3px solid #ff264f;
+    }
+    .co-alert-danger h5  
+    {
+      color:#ff264f;
+    }
+    .co-alert-warning  
+    {
+      border-left: 3px solid #e9bc07;
+    }
+    .co-alert-warning h5  
+    {
+      color:#e9bc07;
+    }
+    .co-alert-info  
+    {
+      border-left: 3px solid #15c0eb;
+    }
+    .co-alert-info h5  
+    {
+      color:#15c0eb;
+    }
+
+    /*=====================
+      09. COLLAPSE STYLE
+      =====================*/
+  
+    .outline_collapse .card-header a,
+    .default_collapse .card-header a
+    {
+      color: #222;
+    }
+    .color_collapse .card,
+    .outline_collapse .card
+    {
+      border-radius: 0px;
+      background: none;
+      margin-bottom: 10px;
+    }
+    .color_collapse .card:last-child,
+    .outline_collapse .card:last-child
+    {
+      border-radius: 0px;
+      background: none;
+      margin-bottom: 0px;
+    }
+    .outline_collapse .card-header
+    {
+      background: none;
+    }
+    .card-header.bg-primary,
+    .card-header.bg-success,
+    .card-header.bg-danger
+    {
+      border-radius: 0px;
+      border:0px;
+    }
+    .card-header.bg-primary a,
+    .card-header.bg-success a,
+    .card-header.bg-danger a
+    {
+      color: #fff !important;
+      font-weight: 300;
+    }
+    .icon_collapse a
+    {
+      color: #222;
+    }
+    .icon_collapse a span
+    {
+      margin-right:15px;
+      height: 20px;
+      float: left;
+    }
+    .icon_collapse [data-toggle="collapse"] span:before
+    {   
+      content: "\e64a";
+      font-family: 'themify';
+      font-size: 14px;
+    }
+    .icon_collapse [data-toggle="collapse"].collapsed span:before{
+      content: "\e64b";
+      font-family: 'themify';      
+      font-size: 14px;
+    }
+    .line_collapse .card
+    {
+      border:0px;
+    }
+    .line_collapse .card-header
+    {
+      background: none;
+      border-left:0px !important;
+      border-right:0px !important;
+      border-top:0px !important;
+      border-bottom: 1px solid #1de8f1;
+    }
+    .simple_plane_collapse .card-header
+    {
+      border-bottom: 0px;
+    }
+
+
+    /*=====================
+      10. PROGRESS BAR STYLE
+      =====================*/
+
+    .line-progress-bar .progress
+    {
+      height: 3px !important;
+      overflow: unset;
+    }
+    .line-progress-bar .progress .progress-bar
+    {
+      position: relative;
+    }
+    .line-progress-bar .progress .progress-bar span
+    {
+      color: #000;
+      right: 0;
+      position: absolute;
+      font-size: 8px !important;
+      top: 3px;
+      color: #007bff;
+    }
+    .scroll-progress-bar .progress .progress-bar
+    {
+      background: #a0cf4f;
+      position: relative;
+      box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+      width: 0%;
+      -webkit-transition: width 4.50s ease !important;
+      -moz-transition: width 4.50s ease !important;
+      -o-transition: width 4.50s ease !important;
+      transition: width 4.50s ease !important;
+    }
+
+

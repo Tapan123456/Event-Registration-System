@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>Event Registration</title>
+      <!-- Required meta tags -->
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+      <!-- themify CSS -->
+      <link rel="stylesheet" href="assets/themify-icons/themify-icons.css">
+      <!-- fontawesome CSS -->
+      <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+      <!-- ionicons CSS -->
+      <link rel="stylesheet" href="assets/ionicons/css/ionicons.min.css">
+      <!-- Lity CSS -->
+      <link rel="stylesheet" href="assets/lity/lity.min.css">
+      <!-- Lity CSS -->
+      <link rel="stylesheet" href="assets/sweetalert/sweetalert.css">
+      <!-- owlcarousal CSS -->
+      <link rel="stylesheet" href="assets/owl-carousal/owl.carousel.min.css">
+      <!-- tab CSS -->
+      <link rel="stylesheet" href="assets/tab/bootstrap-responsive-tabs.css">
+      <!-- animate CSS -->
+      <link rel="stylesheet" href="assets/animate/animate.css">
+      <!-- swiper CSS -->
+      <link rel="stylesheet" href="assets/swiper/swiper.min.css">
+      <!-- aos CSS -->
+      <link rel="stylesheet" href="assets/aos/aos.css">
+      <!-- style CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- media CSS -->
+      <link rel="stylesheet" href="css/media.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	  <script src="assert1/bootstrap/bootstrap.min.js"></script>
+      
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	  <link rel="stylesheet" type="text/css" href="previewForm/previewForm.css" />
+	  <script src="previewForm/previewForm.js"></script>
+      <script>
+         $(document).ready(function(){
+         //when the select changes:
+            
+            $('#u_country').on("change", function(){
+               //set the value of the input to the value of the select.
+                     
+                  var mytext = $('#u_country :selected').text();
+                  if( mytext == "Self" ){
+                        $("#u_tickets").val("1");
+                  }
+            });
+      
+            function readURL(input) {
+               if (input.files && input.files[0]) {
+                  var reader = new FileReader();
+                  
+                  reader.onload = function(e) {
+                     $('#img').attr('src', e.target.result);
+                  }
+                  
+                  reader.readAsDataURL(input.files[0]); // convert to base64 string
+               }
+               }
+
+            $("#u_myfile").change(function() {
+            readURL(this);
+            });
+
+         });
+         
+         document.getElementById("name1").value=document.getElementById("u_name").value;
+         function previewModel(){
+            document.getElementById("name1").innerHTML=document.getElementById("u_name").value;
+            document.getElementById("email1").innerHTML=document.getElementById("u_mail").value;
+            document.getElementById("mobile1").innerHTML=document.getElementById("u_mob").value;
+            document.getElementById("type").innerHTML=document.getElementById("u_country").value;
+            document.getElementById("tickets1").innerHTML=document.getElementById("u_tickets").value;
+         }  
+      </script>
+
+   </head>
+   <body>
+<nav class="navbar navbar-expand-lg navbar-light blank-menu white-text-menu">
+         <div class="container">
+            <a class="navbar-brand" href="Welcome.html">
+               <div class="logo-brand md-logo">
+                  <h3>Event&nbspManagement.</h3>
+               </div>
+            </a><!-- end of navbar-brand -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button><!-- end of navbar-toggler -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <div class="navbar-right">
+                  <ul class="navbar-nav my-2 my-lg-0">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Welcome.html">Home </a>
+                     </li><!-- end of nav-item -->
+                     
+                     <li class="nav-item active">
+                        <a class="nav-link " href="about.html" >About Us </a>
+                      </li><!-- end of nav-item -->
+                  
+                     <li class="nav-item active">
+                        <a class="nav-link " href="register3.html" >Register </a>
+                     </li><!-- end of nav-item -->
+                     
+                  </ul><!-- end of navbar-nav -->
+               </div><!-- end of navbar-right -->
+            </div><!-- end of collapse -->
+         </div><!-- end of container -->
+         </div><!-- end of container -->
+      </nav><!-- end of nav -->
+      <section class="overview flush-bottom">
+       <div class="main-container seo-slider-main-wrapper saas-slider-main-wrapper gradient-banner aos-box">
+         <div class="first-slide slider-banner-inner parallex-banner-inner d-flex" data-stellar-background-ratio="0.3">
+            <div class="inner-carousal-1 text-left">
+               <div class="containet">
+                  <div class="row">
+                    <div class="gradient-inner">
+                        <div class="agency-entry-content text-center">
+         <div class="container">
+            <div class="seo-form-wrapper">
+               <div class="intro text-center">
+                  <h3>Register here.</h3>
+               </div>
+               <div class="saas-form-contact">
+               <form class="mform" class="myform" action=register method="post" enctype="multipart/form-data">
+                  	<div class="clearfix">
+                     	<div class="form-control sub-input-contact">
+                     	<input type="text" id="u_name" name="f_name" placeholder="Your Full Name" pattern="[A-Za-z ]+" autofocus required
+                        oninvalid="this.setCustomValidity('Only Text Allowed here')"
+                        oninput="this.setCustomValidity('')" />
+                     	</div>
+                  	</div>
+							<div class="clearfix">
+                     	<div class="form-control sub-input-contact">
+                     	<input type="email" id="u_mail" name="email" placeholder="Enter Your Email" required>
+                     	</div>
+                  	</div>
+                  	<div class="clearfix">
+                     	<div class="form-control">
+                     	<input type="text" id="u_mob" name="mob" placeholder="Enter Your Mobile" pattern="[0-9]{10}" title="Only numbers Allowed" required>
+                     	</div>
+                     	<div class="form-control">
+                     	<select name="Rtype" id="u_country" required>
+									<option value="" selected="selected">Registration Type</option>
+									<option value="Self">Self</option>
+									<option value="Group">Group</option>
+									<option value="Corporate">Corporate</option>
+									<option value="Other">Other</option>									
+									</select>
+                     	</div>
+                  	</div>
+                  	
+                  <div class="clearfix">
+                     <div class="form-control sub-input-contact">
+                     <input type="text" id="u_tickets" name="tickets" placeholder="Enter No. of Ticket(s)" pattern="[0-9]+" required>
+                     </div>
+					      <div> <img src="#" alt="Preview Image" id="img"> </div>
+					      <div class="form-control sub-input-contact input_upload">
+						      <input type="file" id="u_myfile" name="myfile" required>
+					      </div>
+                  </div>
+                  <div class="text-center">
+                	   <button class="btn seo-start-btn" id="submit" type="submit">Submit</button>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="previewModel()">
+                        Preview
+                      </button>
+                      
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Please Check Your Details Here</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <b>Name : </b></label><label id=name1></label><br>
+                              <b>Email : </b><label id=email1></label><br>
+                              <b>Mobile No : </b><label id=mobile1></label><br>
+                              <b>Registration Type : </b><label id=type></label><br>
+                              <b>No of Tickets : </b><label id=tickets1></label><br>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                	</div>
+                  </form>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+               </div><!-- end of saas-form-contact -->
+            </div><!-- end of seo-form-wrapper -->
+         </div><!-- end of container -->
+      </section><!-- end of saas-contact-main -->
+      <!-- =====================================
+         contact address
+         =====================================-->
+      <section class="feature-sec saas-contact-wrapper seo-contact-wrapper">
+      
+         <div class="container">
+            <div class="feature-type-5-inner">
+               <ul class="clearfix">
+                  <li class="card">
+                     <div class="featutes-type-1 card-body clearfix">
+                        <div class="feature-img">
+                           <img src="images/seo-place.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="feature-desc">
+                           <h5>Pune, Maharashtra</h5>
+                           <p>Tapan Mehta</p>
+                           <p>Vishal Parandwal</p>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="card">
+                     <div class="featutes-type-1 card-body clearfix">
+                        <div class="feature-img">
+                           <img src="images/email.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="feature-desc">
+                           <h6>Tapanmanishmehta@gmail.com</h6>
+						   <h6>vparandwal042@gmail.com</h6>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="card">
+                     <div class="featutes-type-1 card-body clearfix">
+                        <div class="feature-img">
+                           <img src="images/telephone.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="feature-desc">
+                           <h5>+91 82378 14313</h5>
+                           <p>Tapan Mehta</p>
+                           <h5>+91 7083080734</h5>
+                           <p>Vishal Parandwal</p>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </div><!-- end of feature-type-5-inner -->
+         </div><!-- end of container -->
+         </section>
+   </body>
+</html>
