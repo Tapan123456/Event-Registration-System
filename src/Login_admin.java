@@ -156,7 +156,7 @@ public class Login_admin extends HttpServlet {
 						"</html>");
 			}
 			else {
-				response.sendRedirect("errorpass.html");
+				response.sendRedirect("error.html");
 			}
 		}catch(NullPointerException | ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
